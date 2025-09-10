@@ -1,0 +1,16 @@
+flask
+gunicorn
+tensorflow-cpu
+keras
+opencv-python
+pillow
+numpy
+pandas
+scikit-learn
+xgboost
+folium
+geopy
+twilio
+python-dotenv
+matplotlib
+joblib
