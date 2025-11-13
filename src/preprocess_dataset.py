@@ -9,9 +9,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))  # project root
 RAW_DIR = os.path.join(BASE_DIR, "data", "images_raw")
 PROCESSED_DIR = os.path.join(BASE_DIR, "data", "processed")
 
-# Fire/Non-fire folders
-FIRE_DIR = os.path.join(RAW_DIR, "fire")
-NONFIRE_DIR = os.path.join(RAW_DIR, "non_fire")
+# Fire/Non-fire folders updated to Train_Data only
+FIRE_DIR = os.path.join(RAW_DIR, "Data", "Train_Data", "Fire")
+NONFIRE_DIR = os.path.join(RAW_DIR, "Data", "Train_Data", "Non_Fire")
+os.makedirs(PROCESSED_DIR, exist_ok=True)
 
 IMG_SIZE = 128  # resize images
 

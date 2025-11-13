@@ -34,6 +34,13 @@ def predict_image(image_path):
 if __name__ == "__main__":
     # Example usage
     test_image = input("Enter path of image to test: ").strip()
+    print("Shape:", img_array.shape)
+    print("Max pixel value:", np.max(img_array))
+    print("Min pixel value:", np.min(img_array))
+    print("Sample pixels:", img_array[0, :2, :2, :])
+
+
+
     if os.path.exists(test_image):
         predict_image(test_image)
     else:
